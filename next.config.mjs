@@ -1,7 +1,13 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  
   basePath: '/Travel-website',
   assetPrefix: '/Travel-website',
-  images: { unoptimized: true },
+  
+  images: {
+    unoptimized: true,
+  },
 };
+
 export default nextConfig;
