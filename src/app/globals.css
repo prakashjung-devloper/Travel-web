@@ -1,49 +1,334 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+    scroll-behavior: smooth !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; 
+  background: transparent !important; 
 }
 
-html {
-  height: 100%;
+/* --NAVBAR HOVER EFFECTS --- */
+
+
+.navbar-brand:hover{
+transform:translateY(-2px);
+transition:color 0.25s ease-in-out;
+
+
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  transition: color 0.25s ease-in-out, transform 0.2s ease; 
 }
 
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar-nav .nav-link:hover {
+  color: #22c55e !important; 
+  transform: translateY(-2px); 
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.navbar-nav .nav-link.active {
+  color: #eab308 !important; 
+  font-weight: 600;
 }
 
-a {
-  color: inherit;
+/* -- BOOK NOW BUTTON STYLE --- */
+
+.navbar-wrapper .book-btn {
+  background-color: #eab308 !important; 
+  color: #0b0d11 !important; 
+  font-weight: 700 !important;
+  border: 2px solid #eab308 !important; 
+  border-radius: 50px !important; 
+  padding: 8px 24px !important;
+  transition: all 0.3s ease-in-out !important; 
+}
+
+.navbar-wrapper .book-btn:hover {
+  background-color: rgba(34, 197, 94, 0.1) !important; 
+  color: #22c55e !important; 
+  border-color: #22c55e !important; 
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4); 
+  transform: scale(1.05); 
+}
+
+
+/* hero section */
+
+
+.hero-banner-container {
+  min-height: 90vh; 
+  background-image: linear-gradient(rgba(11, 13, 17, 0.3), rgba(11, 13, 17, 0.75)), 
+                    url("/home.webp")!important; 
+                    
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+
+}
+
+.hero-content-wrapper {
+  padding-top: 100px; 
+  z-index: 2;
+}
+
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem !important; 
+}
+
+
+.hero-main-title {
+  letter-spacing: 6px;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.hero-paragraph {
+  max-width: 650px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 3.5rem !important; 
+}
+
+.hero-bottom-fade {
+  height: 120px;
+  background: linear-gradient(transparent, #0b0d11);
+  pointer-events: none;
+}
+
+
+
+/* .why-explore { */
+
+
+.why-explore {
+ background: #101a18;
+ background: linear-gradient(180deg, #0b0d11 0%, #11141a 100%) !important;
+}
+
+.explore-card {
+  background: #17231f;
+  border-radius: 18px;
+  padding: 30px 24px;
+  transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(234, 179, 8, 0.08) !important;
+
+}
+
+.explore-card:hover {
+  transform: translateY(-8px);
+  border-color: #f5b900;
+}
+
+.explore-icon {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.explore-card h4 {
+  color: white;
+  font-weight: 700;
+}
+
+.explore-card p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+
+/* .destination */
+
+
+
+.featured-destinations {
+  background: #101a18;
+}
+
+.destination-intro {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.destination-card {
+  background: #17231f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(245, 185, 0, 0.5);
+}
+
+.destination-image {
+  position: relative;
+  height: 230px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.destination-image img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-image img {
+  transform: scale(1.06);
+}
+
+.destination-content {
+  padding: 22px;
+}
+
+.destination-location {
+  display: inline-block;
+  color: #f5b900;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.destination-content h3 {
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.destination-content p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.destination-link {
+  color: #f5b900;
   text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.destination-link:hover {
+  color: white;
+}
+
+
+/* Travel destination */
+
+#travel-experiences-section {
+  background-color: #0b0d11 !important; 
+}
+
+.experience-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(34, 197, 94, 0.4) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(34, 197, 94, 0.05) !important;
+}
+
+.experience-card:hover .exp-icon-box {
+  transform: rotate(15deg);
+  background-color: rgba(34, 197, 94, 0.15) !important;
+  transition: all 0.3s ease;
+}
+
+/* our mission */
+
+.mission-card {
+  cursor: pointer;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(34, 197, 94, 0.3) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.mission-hero-box {
+  transition: transform 0.4s ease;
+}
+.mission-hero-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* footer */
+
+.footer-section {
+  background-color: #090b0e !important;
+}
+.footer-link {
+  transition: all 0.25s ease-in-out;
+}
+.footer-link:hover {
+  color: #22c55e !important;
+  padding-left: 4px;
+}
+
+
+/* mobile resPonsive */
+
+
+@media (max-width: 768px) {
+  .hero-banner-container {
+    min-height: 80vh !important; 
+    padding-top: 140px !important;
+    padding-bottom: 60px !important;
   }
 }
+
+  .hero-main-title {
+    font-size: 3.5rem !important; 
+    letter-spacing: 6px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-paragraph {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2.5rem !important;
+    padding: 0 10px;
+  }
+
+  .navbar-wrapper .dropdown-menu {
+    background-color: #11141a !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    margin-top: 5px !important;
+    padding: 10px !important;
+  }
+
+  .destination-image {
+    height: 180px !important; 
+
+  .destination-content {
+    padding: 15px !important;
+  }
+
+  .destination-content h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .book-now-card {
+    padding: 20px !important;
+    margin: 10px !important;
+  }
+  }

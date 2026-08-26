@@ -8,6 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.8",
+    "lucide-react": "^1.34.0",
     "next": "16.3.2",
     "react": "19.2.8",
     "react-dom": "19.2.8"
