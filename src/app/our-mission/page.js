@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import { section } from 'lucide-react';
 
 const missionPillars = [
   {
@@ -25,6 +26,7 @@ const missionPillars = [
 
 export default function OurMissionPage() {
   return (
+    <section id="our-mission">
     <div className="our-mission-wrapper py-5" style={{ backgroundColor: '#0b0d11', minHeight: '100vh', color: '#fff', paddingTop: '120px' }}>
       <div className="container py-4">
         
@@ -94,5 +96,6 @@ export default function OurMissionPage() {
 
       </div>
     </div>
+    </section>
   );
 }

@@ -34,7 +34,7 @@ export default function FeaturedDestinations() {
   ];
 
   return (
-    <section className="featured-destinations py-5">
+    <section id="featured-destinations" className="featured-destinations py-5">
       <div className="container py-5">
 
         {/* Heading */}
@@ -65,7 +65,8 @@ export default function FeaturedDestinations() {
                 <div className="destination-image">
                   <Image
                     src={destination.image}
-                    alt={destination.name}
+                    alt={destination.name} 
+                         
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />

@@ -31,15 +31,15 @@ export default function Hero() {
         </p>
 
         <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-          <Link href="/book-now" className="btn btn-warning btn-lg px-4 fw-bold rounded-pill shadow">
+          <a href="#book-now" className="btn btn-warning btn-lg px-4 fw-bold rounded-pill shadow">
             Book A Trip Now 🍃
-          </Link>
-<Link
-  href="/nature-city" 
+          </a>
+<a
+  href="#featured-destinations" 
   className="btn btn-outline-light btn-lg px-4 rounded-pill text-decoration-none"
 >
   View Destinations
-</Link>
+</a>
 
         </div>
 

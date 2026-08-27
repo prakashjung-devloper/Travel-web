@@ -190,11 +190,11 @@ export default function Navbar() {
               </Link>
 
               {/* Book */}
-              <Link href="/book-now" className="text-decoration-none">
+              <a href="#book-now" className="text-decoration-none">
                 <button className="book-btn text-white rounded-pill ms-2">
                   Book Now
                 </button>
-              </Link>
+              </a>
 
             </div>
           </div>
