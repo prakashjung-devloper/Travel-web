@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   
-  basePath: '/Travel-website',
-  assetPrefix: '/Travel-website',
+  basePath: '/Travel-web',
+  assetPrefix: '/Travel-web',
   
   images: {
     unoptimized: true,
