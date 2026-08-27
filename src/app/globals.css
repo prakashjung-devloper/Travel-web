@@ -66,7 +66,7 @@ transition:color 0.25s ease-in-out;
 .hero-banner-container {
   min-height: 90vh; 
   background-image: linear-gradient(rgba(11, 13, 17, 0.3), rgba(11, 13, 17, 0.75)), 
-                    url("/home.webp")!important; 
+                    url("/Travel-web/home.webp")!important; 
                     
   background-size: cover;
   background-position: center;

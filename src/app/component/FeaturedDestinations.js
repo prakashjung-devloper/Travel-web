@@ -6,28 +6,28 @@ export default function FeaturedDestinations() {
     {
       name: "Kailali",
       location: "Suduraschim Province",
-      image: "/ghodaghodi.jpg",
+      image: "/Travel-web/ghodaghodi.jpg",
       description:
         "Kailali District is famous for unique wetlands, historical parks, and its role as the primary economic hub of far-western Nepal."
     },
     {
       name: "Pokhara",
       location: "Gandaki Province",
-      image: "/pokhara.jpg",
+      image: "/Travel-web/pokhara.jpg",
       description:
         "Experience peaceful lakes, breathtaking mountain views, and unforgettable adventures.",
     },
     {
       name: "Bardiya",
       location: "Lumbini Province",
-      image: "/Bardiya.jpg",
+      image: "/Travel-web/Bardiya.jpg",
       description:
         "Bardiya is famous for being Asia's premier destination to see wild Royal Bengal tigers..",
     },
     {
       name: "Mustang",
       location: "Gandaki Province",
-      image: "/mustang.jpg",
+      image: "/Travel-web/mustang.jpg",
       description:
         "Explore dramatic landscapes, ancient villages, and the unique beauty of Nepal's Himalayas.",
     },
