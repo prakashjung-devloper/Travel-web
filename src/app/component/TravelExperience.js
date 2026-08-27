@@ -10,7 +10,7 @@ const experiences = [
     tag: "Himalayan Treeking",
     title: "High-Altitude Basecamp Stays",
     desc: "Sleep under millions of shining stars surrounded by the world's highest frozen peaks.",
-    bgImage: "himalayan.jpg",
+    bgImage: "/Travel-web/himalayan.jpg",
     icon: <Flame size={22} className="text-warning" />
   },
   {
@@ -18,7 +18,7 @@ const experiences = [
     tag: "Wildlife and jungle ",
     title: "Jungle Luxury Glamping",
     desc: "Listen to the raw sounds of tigers and rhinos from a secure luxury tented oasis deep in the wild.",
-    bgImage: "jungle.jpg",
+    bgImage: "/Travel-web/jungle.jpg",
     icon: <TreePine size={22} className="text-success" />
   },
   {
@@ -26,7 +26,7 @@ const experiences = [
     tag: "Cultural Insight",
     title: "Monastery Spiritual Retreats",
     desc: "Meditate alongside native monks in ancient cloisters hidden among the misty clouds.",
-    bgImage: "culture.jpg",
+    bgImage: "/Travel-web/culture.jpg",
     icon: <Compass size={22} className="text-info" />
   }
 ];

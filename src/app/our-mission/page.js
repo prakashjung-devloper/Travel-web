@@ -27,6 +27,7 @@ const missionPillars = [
 export default function OurMissionPage() {
   return (
     <section id="our-mission">
+
     <div className="our-mission-wrapper py-5" style={{ backgroundColor: '#0b0d11', minHeight: '100vh', color: '#fff', paddingTop: '120px' }}>
       <div className="container py-4">
         
@@ -51,7 +52,7 @@ export default function OurMissionPage() {
               className="mission-hero-box position-relative rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex align-items-center justify-content-center"
               style={{ 
                 height: '350px',
-                backgroundImage: `linear-gradient(rgba(11, 13, 17, 0.2), rgba(11, 13, 17, 0.7)), url("ne.jpg")`,
+                backgroundImage: `linear-gradient(rgba(11, 13, 17, 0.2), rgba(11, 13, 17, 0.7)), url("/Travel-web/ne.jpg")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}

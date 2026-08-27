@@ -43,7 +43,8 @@ export default function BookNowPage() {
   };
 
   return (
-   < section id= "book-now">
+   <section id="book-now">
+
     <div className="py-5" style={{ backgroundColor: '#0b0d11', minHeight: '100vh', color: '#fff', paddingTop: '120px' }}>
       <div className="container">
         <div className="row justify-content-center">

@@ -182,12 +182,12 @@ export default function Navbar() {
               </div>
 
               {/* Mission */}
-              <Link
+              <a
                 className="nav-link text-white-50 px-2"
-                href="/our-mission"
+                href="#our-mission"
               >
                 Our Mission
-              </Link>
+              </a>
 
               {/* Book */}
               <a href="#book-now" className="text-decoration-none">

@@ -285,6 +285,17 @@ transition:color 0.25s ease-in-out;
   padding-left: 4px;
 }
 
+#our-mission{
+   backgroundColor: #0b0d11;
+    minHeight: 100vh;
+    color: #fff;
+    paddingTop: 120px;
+}
+
+
+
+
+
 
 /* mobile resPonsive */
 
